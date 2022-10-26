@@ -1,0 +1,7 @@
+{{#each this.userIds as |id|}}
+  <button {{on "click" (fn this.updateUserId id)}}>
+    Load user {{id}}
+  </button>
+{{/each}}
+
+User: {{this.userLoader.value.id}}
